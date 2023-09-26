@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		
+		<section>
+			<div class="right">
+				<img src="img/img_home.png" alt="">
+			</div>
+			<div class="left">
+				<h2 style="color: rgb(77, 77, 248);"><b>CalzaHuellas Sport</b></h2>
+				<p style="min-width: 10ch; max-width: 30ch;">Descubre la mejor selección de calzado para toda la familia en nuestro catálogo en línea. ¡Encuentra el estilo y la comodidad que necesitas!</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="left">
+				<h2 style="color: rgb(77, 77, 248);"><b>¿Qué Ofrecemos?</b></h2>
+				<p style="min-width: 10ch; max-width: 30ch;">En <b>CalzaHuellas Sport</b>, estamos orgullosos de ofrecerte calzado de alta calidad, fabricado por artesanos locales en Huila. Cada par está cuidadosamente diseñado para brindarte confort y estilo.</p>
+			</div>
+			<div class="right">
+				<img src="img/img2_home.png" alt="">
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	body{
+		width: 100vw;
+		overflow-x: hidden;
+	}
+	section {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	section .right, section .left {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	@media (max-width: 720px) {
+		section{
+			flex-direction: column;
+		}
+	}
+</style>

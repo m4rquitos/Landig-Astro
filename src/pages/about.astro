@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Acerca de"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('August 08 2021')}
+	heroImage="https://i.ytimg.com/vi/bpcRh8qpSVM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBs33LasIchy1it9lkQYaTpWxM_vQ"
+>
+	
+		<section>
+			<div>
+				<img src="img/img_home.png" alt="">
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h2 style="color: rgb(77, 77, 248);"><b>Nuestra Historia</b></h2>
+				<p style="min-width: 10ch; max-width: 30ch; text-align: center;">Zapatos Garzón es una empresa local con décadas de experiencia en la industria del calzado. Comenzamos como una pequeña tienda en Garzón y hemos crecido para servir a clientes en todo el país.</p>
+			</div>
+		</section>
+		
+		<section>
+			<div>
+				<img src="img/img2_home.png" alt="">
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h2 style="color: rgb(77, 77, 248); text-align: center"><b>Compromiso con la Comunidad</b></h2>
+				<p style="min-width: 10ch; max-width: 30ch; text-align: center;">Creemos en apoyar a la comunidad local. Trabajamos con artesanos talentosos de Huila y colaboramos en proyectos que benefician a nuestra región.</p>
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<img src="https://www.cloudtalk.io/wp-content/uploads/2021/12/Article-202108-CSPhilosophy-2x-1024x538.png" alt="">
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h2 style="color: rgb(77, 77, 248); text-align: center"><b>Servicio al Cliente</b></h2>
+				<p style="min-width: 10ch; max-width: 30ch; text-align: center;">En Zapatos Garzón, la satisfacción del cliente es nuestra prioridad. Nuestro equipo amable y profesional está siempre listo para ayudarte con tus necesidades de calzado.</p>
+			</div>
+		</section>
+		
+
+		<div class="TeamWork">
+			<!-- TODO Here the information about Team Work -->
+		</div>
+
+</Layout>
+
+
+<style>
+	body{
+		width: 100vw;
+		overflow-x: hidden;
+	}
+	section {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	section div{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	@media (max-width: 720px) {
+		section{
+			flex-direction: column;
+		}
+	}
+</style>
